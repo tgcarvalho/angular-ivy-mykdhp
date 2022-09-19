@@ -1,0 +1,8 @@
+<h2>Meus Carros</h2>
+
+<ul *ngIf="carros.length">
+  <li *ngFor="let carro of carros">{{ carro.name }} - {{ carro.marca }}</li>
+</ul>
+<span *ngIf="!carros.length">Não há carros cadastrados</span>
+
+<addcarro name="Add Carro"></addcarro>
